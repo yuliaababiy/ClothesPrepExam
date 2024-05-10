@@ -4,14 +4,14 @@
 #include <iostream>
 using namespace std;
 
-class Sport 
+class Evening : Clothes
 {
 protected:
 	string type;
 	string technology;
 
 public:
-	Sport(string type, string technology);
-	virtual void display();
+	Evening(string name, string material, double price, string type, string technology);
+	void display() override;
 };
 #endif 

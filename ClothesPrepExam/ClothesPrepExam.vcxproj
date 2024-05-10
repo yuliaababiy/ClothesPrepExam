@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Clothes.cpp" />
     <ClCompile Include="ClothesPrepExam.cpp" />
+    <ClCompile Include="Evening.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sport.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clothes.h" />

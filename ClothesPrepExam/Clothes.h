@@ -4,7 +4,7 @@
 #include "Evening.h"
 #include "Sport.h"
 
-class Clothes : public Evening, Sport
+class Clothes 
 {
 private:
 	double price;
@@ -13,6 +13,6 @@ private:
 
 public:
 	Clothes(string name, string material, double price);
-    void display() override;
+   virtual void display();
 };
 #endif //CLOTHES.H

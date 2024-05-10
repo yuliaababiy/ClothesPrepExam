@@ -1,7 +1,8 @@
 #include "Clothes.h"
+#include <iostream>
 
-Clothes :: Clothes(string name, string material, double price) : Evening(type, stock), Sport(type, technology){}
-
-void Clothes::display() {
-	std::cout << "Clothes: " << name << "," << material << " material, price " << price << " $" << endl;
+Clothes::Clothes(double price, string name, string material) :name(name), price(price), material(material) {};
+void Clothes::display()
+{
+	cout << "Clothes: "  << price << " $ " << name << " name: " << material << " material: " <<endl;
 }

@@ -1,17 +1,21 @@
 #pragma once
 #ifndef EVENING_H
 #define EVENING_H
-#include <iostream>
+#include "Clothes.h"
+#include <string>
 using namespace std;
 
-class Evening 
+class Evening: Clothes
 {
 protected:
 	string type;
-	bool stock;// допис функц
+	bool stock;
 
 public:
-	Evening(string type);
-	virtual void display();
+	Evening(string name, string material,double price, string type, bool stock);
+	void display() override;
+    bool hasDecor() const;
 };
 #endif 
+
+
