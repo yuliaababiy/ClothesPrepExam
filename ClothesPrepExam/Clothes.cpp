@@ -4,11 +4,12 @@
 Clothes::Clothes(string name, string material, double price) :name(name), price(price), material(material) {};
 void Clothes::display()
 {
-	cout << "Clothes: "  << price << " $ " << name << " name: " << material << " material: " <<endl;
+  cout << "Clothes: "  << price << " $ " << name << " name: " << material << " material: " << endl;
 }
 
 void Clothes::save(ostream& out)
 {
-	cout << "Clothes: " << price << " $ " << name << " name: " << material << " material: " << endl;
+    out << "Price: " << price << " $ " << endl;
+    out << "Name: " << name << endl;
+    out << "Material: " << material << endl;
 }
-

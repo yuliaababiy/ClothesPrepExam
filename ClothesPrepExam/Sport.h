@@ -5,7 +5,7 @@
 #include "Clothes.h"
 using namespace std;
 
-class Sport : Clothes
+class Sport : public Clothes
 {
 protected:
 	string type;

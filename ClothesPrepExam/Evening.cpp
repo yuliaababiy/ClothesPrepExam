@@ -10,6 +10,6 @@ void Evening::display()
 }
 void Evening::save(ostream& out) 
     {
-        cout << "Type: " << type << endl;
-        cout << "In Stock: " << stock << endl;
+        out << "Type: " << type << endl;
+        out << "In Stock: " << stock << endl;
     }

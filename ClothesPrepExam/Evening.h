@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-class Evening: Clothes
+class Evening: public Clothes
 {
 protected:
 	string type;
