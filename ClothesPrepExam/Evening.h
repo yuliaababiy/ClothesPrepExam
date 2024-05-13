@@ -14,7 +14,7 @@ protected:
 public:
 	Evening(string name, string material,double price, string type, bool stock);
 	void display() override;
-    bool hasDecor() const;
+	void save(ostream& out) override;
 };
 #endif 
 

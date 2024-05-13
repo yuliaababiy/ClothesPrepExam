@@ -1,18 +1,19 @@
 #pragma once
-#ifndef CLOTHES.H
-#define CLOTHES.H
-#include "Evening.h"
-#include "Sport.h"
+#ifndef CLOTHES_H
+#define CLOTHES_H
+#include <iostream>
+using namespace std;
 
-class Clothes 
+class Clothes
 {
-private:
+protected:
 	double price;
 	string name;
 	string material;
 
 public:
 	Clothes(string name, string material, double price);
-   virtual void display();
+	virtual void display();
+	virtual void save(ostream& out);
 };
 #endif //CLOTHES.H

@@ -1,0 +1,3 @@
+Clothes General_Clothes fur 600
+Evening Evening_Clothes atlas 800 dress true
+Sport Sport_Clothes shovk 250 waterfood football
