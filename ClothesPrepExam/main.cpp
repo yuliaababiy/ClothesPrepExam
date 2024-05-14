@@ -16,7 +16,7 @@ void saveToFile(vector <Clothes*>& clothes, string filename)
 void loadFromFile(vector <Clothes*>& clothes, string filename)
 {
 	ifstream file(filename);
-	string type, name, material, technology;
+	string type, name, material, technology, eveningType, sportType;
 	int price;
 	bool stock;
 
@@ -24,20 +24,21 @@ void loadFromFile(vector <Clothes*>& clothes, string filename)
 	{
 		if (type == "Sport")
 		{
-			file >> technology;
-			clothes.push_back(new Sport(name, material, price, type, technology));
+			file >> sportType >> technology;
+			clothes.push_back(new Sport(name, material, price, sportType, technology));
 		}
 		else if (type == "Evening")
 		{
-			file >> stock;
-			clothes.push_back(new Evening(name, material, price,type, stock));
+			file >> eveningType >> stock;
+			clothes.push_back(new Evening(name, material, price, eveningType, stock));
 		}
 		else if (type == "Clothes")
 		{
-			clothes.push_back(new Clothes(name, material,price));
+			clothes.push_back(new Clothes(name, material, price));
 		}
 	}
 }
+
 
 int main()
 {

@@ -10,6 +10,9 @@ void Sport::display()
 }
 void Sport::save(ostream& out)
 {
-    cout << "Type: " << type << endl;
-    cout << "Technology: " << technology << endl;
+    out << "Name: " << name << endl;
+    out << "Material: " << material << endl;
+    out << "Price: " << price << endl;
+    out << "Type: " << type << endl;
+    out << "Technology: " << technology << endl;
 }

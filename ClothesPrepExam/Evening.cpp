@@ -10,6 +10,9 @@ void Evening::display()
 }
 void Evening::save(ostream& out) 
     {
+        out << "Name: " << name << endl;
+        out << "Material: " << material << endl;
+        out << "Price: " << price << endl;
         out << "Type: " << type << endl;
         out << "In Stock: " << stock << endl;
     }
