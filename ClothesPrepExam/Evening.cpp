@@ -5,8 +5,12 @@ Evening::Evening(string name, string material, double price, string type, bool s
 
 void Evening::display()
 {
+    cout << "Name: " << name << endl;
+    cout << "Material: " << material << endl;
+    cout << "Price: " << price << endl;
     cout << "Type: " << type << endl;
     cout << "In Stock: " << stock << endl;
+    cout << endl;
 }
 void Evening::save(ostream& out) 
     {
@@ -15,6 +19,8 @@ void Evening::save(ostream& out)
         out << "Price: " << price << endl;
         out << "Type: " << type << endl;
         out << "In Stock: " << stock << endl;
+        out << endl;
+
     }
 void Evening ::saveWithSpaces(ostream& out)
 {

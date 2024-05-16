@@ -16,6 +16,6 @@ public:
 	virtual void display();
 	virtual void save(ostream& out);
 	virtual void saveWithSpaces(ostream& out);
-	int getMaxPrice();
+	double getPrice();
 };
 #endif //CLOTHES.H

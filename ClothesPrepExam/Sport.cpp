@@ -5,8 +5,12 @@ Sport::Sport(string name, string material, double price, string type, string tec
 
 void Sport::display()
 {
+    cout << "Name: " << name << endl;
+    cout << "Material: " << material << endl;
+    cout << "Price: " << price << endl;
     cout << "Type: " << type << endl;
     cout << "Technology: " << technology << endl;
+    cout << endl;
 }
 void Sport::save(ostream& out)
 {
@@ -15,6 +19,7 @@ void Sport::save(ostream& out)
     out << "Price: " << price << endl;
     out << "Type: " << type << endl;
     out << "Technology: " << technology << endl;
+    out << endl;
 }
 void Sport::saveWithSpaces(ostream& out)
 {

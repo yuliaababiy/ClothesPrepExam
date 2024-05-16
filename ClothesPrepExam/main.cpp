@@ -68,19 +68,19 @@ int main()
 		else if (choice == 2)
 		{
 			string type, name, material, technology, eveningType, sportType;
-			int price;
+			double price;
 			bool stock;
 			cout << "Enter type: " << endl;
 			cin >> type;
 			if (type == "Clothes")
 			{
-				cout << "Enter price: " << endl;
-				cin >> name;
 				cout << "Enter name: " << endl;
 				cin >> name;
 				cout << "Enter material: " << endl;
-				cin >> name;
-				Clothes* c = new Clothes( price, name, material);
+				cin >> material;
+				cout << "Enter price: " << endl;
+				cin >> price;
+				Clothes* c = new Clothes(name, material, price);
 				c->saveWithSpaces(file);
 			}
 			else if (type == "Evening")
@@ -95,7 +95,7 @@ int main()
 				cin >> type;
 				cout << "Enter stock: " << endl;
 				cin >> stock;
-				Evening* e = new Evening( name,material, price, type, stock);
+				Evening* e = new Evening(name, material, price, type, stock);
 				e->saveWithSpaces(file);
 			}
 			else if (type == "Sport")
@@ -130,9 +130,9 @@ int main()
 			int theMostExpensive = 0;
 			for (auto c : clothes)
 			{
-				if (c->getMaxPrice() > theMostExpensive)
+				if (c->getPrice() > theMostExpensive)
 				{
-					theMostExpensive = c->getMaxPrice();
+					theMostExpensive = c->getPrice();
 				}
 			}
 			cout << "The most expensive is: " << theMostExpensive << endl;
@@ -147,4 +147,5 @@ int main()
 		}
 	}
 	return 0;
+}
 	

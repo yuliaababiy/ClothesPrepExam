@@ -1,3 +1,5 @@
 Clothes General_Clothes fur 600
-Evening Evening_Clothes atlas 800 dress true
-Sport Sport_Clothes shovk 250 waterproof football
+Evening Evening_Clothes atlas 800 dress 1
+Sport Sport_Clothes shovk 250 waterproof footballSport
+Clothes Cl cl 300 
+Sport cl cl 300 cl cl 
