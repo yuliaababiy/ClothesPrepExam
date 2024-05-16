@@ -16,3 +16,8 @@ void Sport::save(ostream& out)
     out << "Type: " << type << endl;
     out << "Technology: " << technology << endl;
 }
+void Sport::saveWithSpaces(ostream& out)
+{
+    out << "Sport " << name << " " << material << " " << price << " " << type << " " << technology << " " << endl;
+}
+

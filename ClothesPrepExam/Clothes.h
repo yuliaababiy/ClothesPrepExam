@@ -15,5 +15,7 @@ public:
 	Clothes(string name, string material, double price);
 	virtual void display();
 	virtual void save(ostream& out);
+	virtual void saveWithSpaces(ostream& out);
+	int getMaxPrice();
 };
 #endif //CLOTHES.H

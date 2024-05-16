@@ -15,6 +15,7 @@ public:
 	Evening(string name, string material,double price, string type, bool stock);
 	void display() override;
 	void save(ostream& out) override;
+	void saveWithSpaces(ostream& out) override;
 };
 #endif 
 

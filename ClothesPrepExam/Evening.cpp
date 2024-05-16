@@ -16,3 +16,7 @@ void Evening::save(ostream& out)
         out << "Type: " << type << endl;
         out << "In Stock: " << stock << endl;
     }
+void Evening ::saveWithSpaces(ostream& out)
+{
+    out << "Evening " << name << " " << material << " " <<price << " " << type << " " << stock << " " << endl;
+}

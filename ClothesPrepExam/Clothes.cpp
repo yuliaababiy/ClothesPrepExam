@@ -13,3 +13,8 @@ void Clothes::save(ostream& out)
     out << "Name: " << name << endl;
     out << "Material: " << material << endl;
 }
+
+void  Clothes ::saveWithSpaces(ostream& out)
+{
+    out << "Clothes " << price << " " << name << " " << material << " " << endl;
+}

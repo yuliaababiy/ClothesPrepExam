@@ -15,5 +15,6 @@ public:
 	Sport(string name, string material, double price, string type, string technology);
 	void display() override;
 	void save(ostream& out) override;
+	void saveWithSpaces(ostream& out) override;
 };
 #endif 
